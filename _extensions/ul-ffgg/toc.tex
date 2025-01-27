@@ -1,0 +1,23 @@
+
+\pagenumbering{roman}
+
+$if(toc)$
+\renewcommand*\contentsname{Table des matieres}
+\tableofcontents
+$endif$
+
+\newpage
+
+$if(lof)$
+\renewcommand\listfigurename{Liste des figures}
+\listoffigures
+$endif$
+
+$if(lot)$
+\renewcommand\listtablename{Liste des tableaux}
+\listoftables
+$endif$
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}

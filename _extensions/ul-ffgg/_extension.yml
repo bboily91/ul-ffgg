@@ -1,0 +1,25 @@
+title: UL-FFGG
+author: Benjamin
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    pdf:
+      include-in-header: ["_header.tex"]
+      geometry:
+        - top=31.8mm
+        - bottom=31.8mm
+        - right=24.5mm
+        - left=24.5mm
+      fontsize: 12pt
+      linestretch: 1.5
+      fig-cap-location: "bottom"
+      tbl-cap-location: "top"
+
+      template-partials:
+        - "_page-title.tex"
+        - "_header.tex"
+        - "before-body.tex"
+        - "toc.tex"
+
+

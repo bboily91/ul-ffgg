@@ -1,0 +1,79 @@
+---
+title: "Rapport de session"
+format:
+  ul-ffgg-pdf:
+    toc: true
+    lof: true
+    lot: true
+author: 
+  - name: Benjamin
+  - name: Billy
+  - name: Symba
+date: last-modified
+keep-tex: false
+---
+
+# Introduction
+
+*TODO* Create an example file that demonstrates the formatting and features of your format.
+
+# Plus d'information
+
+You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html> Le lien precedent parle de plusieurs chose qui n'ont pas de lien direct. Le seul lien que nous pouvons faire est que je suis entrain de tester un peu n'importe quoi. Comme on dit en bon quebecois, **j'apprends sul tas**! Est-ce que le texte est justifie ou non?
+
+\newpage
+
+# Figures
+
+## Image
+
+Voici une figure: \newline 
+![quarto](images/logo-quarto.png){width="2in" fig-align="center"}
+
+## Figure python
+
+``` {python}
+#| layout-ncol: 2
+#| label: fig-plot
+#| fig-cap: 
+#|   - "Graphique 1"
+#|   - "Graphique 2"
+
+import matplotlib.pyplot as plt
+
+plt.plot([1, 23, 2, 4])
+plt.show()
+
+plt.plot([8, 64, 23, 90])
+plt.show()
+```
+
+\newpage
+
+# Tableaux
+
+## Tableau Markdown
+
+|**fruit**|**prix (\$/lbs)**|
+|:----|----:|
+|banane|2.05|
+|pomme|0.75|
+|fraise|3.00|
+
+: Prix unitaire des fruits {.striped .hover} 
+
+# Ajouts a faire
+
+- [ ] Ajuster la date (ex: 16 janvier 2024)
+- [ ] Gerer le abstract et le thanks. typographie arial 11.
+- [ ] Revoir le style des tableaux. Comparaison python, R et markdown
+- [ ] Titre du document dans l'entete. **Deplacer la ligne de code dans 'before-body.tex'**
+- [ ] Revoir le style de la table des matieres pour qu'il y ait des petits pointilles
+- [X] Faire une liste de noms d'auteurs
+- [ ] Ajouter des affiliations aux auteurs. Necessaire?
+- [ ] Un copyright dans le pied de page
+- [ ] Changer le nom des label de tableaux et figures.
+- [ ] Ajouter la section bibliographie
+
+# Bibliographie
+

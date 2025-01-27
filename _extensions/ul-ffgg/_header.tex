@@ -1,0 +1,11 @@
+% Appele dans "include-in-header", donc n'a pas acces aux variables du YAML du document ex: 'title'
+% Peut-etre demenager tout ca dans 'before-body.tex'???
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{{$title$}} % Peut-etre un niveau trop haut???
+\fancyfoot[C]{\thepage}
+
