@@ -1,7 +1,27 @@
-
-$if(title)$
-
-  $_page-title.tex()$
-
+$if(has-frontmatter)$
+\frontmatter
 $endif$
 
+$if(title)$
+  $_page-title.tex()$
+$endif$
+
+\pagenumbering{roman}
+
+$if(abstract)$
+  \renewcommand{\abstractname}{\section{Résumé}\label{ruxe9sumuxe9}}
+  \begin{abstract}
+    \begin{center}
+      $abstract$
+    \end{center}
+    {\newpage}
+  \end{abstract}
+$endif$
+
+$if(remerciement)$
+  \begin{center}
+    \section{Remerciements}\label{remerciement}
+    $remerciement$
+  \end{center}
+  {\newpage}
+$endif$

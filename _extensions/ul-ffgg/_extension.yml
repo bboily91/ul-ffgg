@@ -15,11 +15,17 @@ contributes:
       linestretch: 1.5
       fig-cap-location: "bottom"
       tbl-cap-location: "top"
+      fontfamily: newtxsf
+
+      filters:
+        - "filter.lua"
 
       template-partials:
         - "_page-title.tex"
         - "_header.tex"
+        - "_header_footer.tex"
         - "before-body.tex"
+        - "pandoc.tex"
         - "toc.tex"
 
 

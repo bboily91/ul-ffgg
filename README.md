@@ -6,20 +6,18 @@ Cette extension permet de générer des rapports en format PDF tout en respectan
 ## Prérequis
 
 1. Téléchargez la dernière version de [Quarto](https://quarto.org/docs/get-started/).
+
 2. Vérifiez la version de Quarto (>= 1.6).
    ```bash
    quarto --version
    ```
-3. Mettez à jour Quarto si nécessaire.
-   ```bash
-   quarto update
-   ```
-4. Vérifiez l'environnement Quarto.
+
+3. Vérifiez l'environnement Quarto.
    ```bash
    quarto check
    ```
 
-5. **Pour les utilisateurs de VS Code**, il est important d'installer `TinyTeX`.
+4. **Pour les utilisateurs de VS Code**, il est important d'installer `TinyTeX`.
    ```bash
    quarto install tinytex
    ```
@@ -38,19 +36,20 @@ Si vous travaillez déjà sur un projet existant et que le répertoire est déj�
 quarto install extension bboily91/UL-FFGG_Extension/ul-ffgg
 ```
 
-<!--
-## Utilisation
 
-*TODO*: Describe how to use your format.
+## Utilisation avec R et RStudio
 
-## Options de l'extension
+Les utilisateurs de RStudio
 
-*TODO*: If your format has options that can be set via document metadata, describe them. -->
+### Exemple
 
+Voici un exemple de rapport : [example_RStudio.qmd](example_RStudio.qmd). 
 
-## Exemple
+## Utilisateur avec python et VS Code
 
-Voici un exemple de rapport : [example.qmd](example.qmd). Cet exemple a été créé avec VS Code et Python.
+### Exemple
+
+Voici un exemple de rapport : [example_VSCode.qmd](example_VSCode.qmd). Cet exemple a été créé avec VS Code et Python.
 
 ## Documentation
 

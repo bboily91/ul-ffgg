@@ -1,0 +1,11 @@
+
+% Configuration de l'entête
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{{$title$}}
+\fancyfoot[C]{\thepage}
+
+% Configuration du bas de page
+$if(copyright)$
+  \fancyfoot[L]{\textcopyright \ $copyright.holder$ $copyright.year$}
+$endif$

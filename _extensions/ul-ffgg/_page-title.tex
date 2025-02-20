@@ -8,8 +8,18 @@
     \vspace{2cm}
     {\Huge\bfseries\underline {$title$} \par}
     \vspace{2cm}
-    {\Large Auteurs: \\}
-    $for(author)${\large {$author$}}$sep${\\}$endfor$
+
+    $if(author_count)$
+        \ifnum $author_count$ = 1
+            {\Large Auteur : \\}
+        \else
+            {\Large Auteurs : \\}
+        \fi
+        $for(author)${\large {$author$}}$sep$\\$endfor$
+    $endif$
+
+    \vfill
+    {\Large À l'intention de: \\ {$professor$}}
     \vfill
     {\large Quebec, {$date$}}
 \end{titlepage}

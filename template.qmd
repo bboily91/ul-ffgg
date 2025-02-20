@@ -1,5 +1,6 @@
 ---
 title: "Rapport de session"
+bibliography: references.bib
 format:
   ul-ffgg-pdf:
     toc: true
@@ -9,6 +10,7 @@ author:
   - name: Benjamin
   - name: Billy
   - name: Symba
+professor: Anne Bernard
 date: last-modified
 keep-tex: false
 ---
@@ -20,6 +22,9 @@ keep-tex: false
 # Plus d'information
 
 You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html> Le lien precedent parle de plusieurs chose qui n'ont pas de lien direct. Le seul lien que nous pouvons faire est que je suis entrain de tester un peu n'importe quoi. Comme on dit en bon quebecois, **j'apprends sul tas**! Est-ce que le texte est justifie ou non?
+
+Je ne crois pas que ce paragraphe soit necessaire.\par
+Peut-etre que celui-ci oui!
 
 \newpage
 
@@ -65,15 +70,17 @@ plt.show()
 # Ajouts a faire
 
 - [ ] Ajuster la date (ex: 16 janvier 2024)
+- [X] Ajouter l'indentation en debut de paragraphe
+- [X] Ajouter à l'intention de "professeur" dans la page titre
 - [ ] Gerer le abstract et le thanks. typographie arial 11.
 - [ ] Revoir le style des tableaux. Comparaison python, R et markdown
-- [ ] Titre du document dans l'entete. **Deplacer la ligne de code dans 'before-body.tex'**
+- [X] Titre du document dans l'entete. **Deplacer la ligne de code dans 'before-body.tex'**
 - [ ] Revoir le style de la table des matieres pour qu'il y ait des petits pointilles
 - [X] Faire une liste de noms d'auteurs
 - [ ] Ajouter des affiliations aux auteurs. Necessaire?
-- [ ] Un copyright dans le pied de page
+- [X] Un copyright dans le pied de page
 - [ ] Changer le nom des label de tableaux et figures.
-- [ ] Ajouter la section bibliographie
+- [X] Ajouter la section bibliographie
 
 # Bibliographie
 

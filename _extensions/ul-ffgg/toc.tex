@@ -1,5 +1,6 @@
 
-\pagenumbering{roman}
+%%%% la pagination a été déplacé dans le "before-body.tex" %%%%
+% \pagenumbering{roman}
 
 $if(toc)$
 \renewcommand*\contentsname{Table des matieres}
@@ -19,5 +20,8 @@ $if(lot)$
 $endif$
 
 \newpage
+
 \pagenumbering{arabic}
 \setcounter{page}{1}
+\renewcommand\tablename{Tableau}
+\renewcommand\figurename{Figure}
