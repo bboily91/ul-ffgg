@@ -24,7 +24,7 @@ Cette extension permet de générer des rapports en format PDF tout en respectan
 
 ## Installation
 
-Ouvrir une session RStudio et aller dans le terminal.
+Ouvrez une session RStudio et aller dans le terminal.
 
 Pour installer l'extension et les exemples associés, utilisez la commande suivante : 
 ```bash
@@ -55,7 +55,7 @@ logo: logo-quarto              # Nom du fichier du logo à mettre dans la page t
 logo_size: "1.5cm"             # Taille du logo (Optionnel)
 author:                        # Liste des auteurs
   - name: Benjamin
-copyright:                     # Ajoute un copyright dans le pieds de page (Optionnel)
+copyright:                     # Ajoute un copyright dans le pied de page (Optionnel)
   holder: Benjamin
   year: 2025
 professor: Albert Einstein
@@ -87,13 +87,14 @@ quarto render example_RStudio.qmd
 
 Ouvrir un terminal et activez l'environnement virtuel.
 ```bash
-source chemin/vers/votre/environnement/virtuel/bin/activate   # Sous Linux & MacOS
+source chemin/vers/votre/environnement/virtuel/bin/activate   # Sous Linux & macOS
 .\chemin\vers\votre\environnement\virtuel\Scripts\activate    # Sous Windows
 ```
 S'assurer d'avoir les librairies nécessaires.
 ```bash
-python3 -m pip install jupyter matplotlib plotly     # Sous Linux & MacOS
+python3 -m pip install jupyter matplotlib plotly     # Sous Linux & macOS
 py -m pip install jupyter matplotlib plotly          # Sous Windows
+```
 
 Lancez une session VS Code.
 ```bash
@@ -103,7 +104,7 @@ code .
 
 Ajoutez cette ligne à la fin du `yaml`
 ```yaml
-jupyter: python3     # Sous Linux & MacOS
+jupyter: python3     # Sous Linux & macOS
 jupyter: python      # Sous Windows
 ```
 ### Exemple
@@ -112,7 +113,7 @@ Voici un exemple de rapport : [example_VSCode.qmd](example_VSCode.qmd). Cet exem
 
 ## Générer le ficher `references.bib`
 
-À partir de [Zotero](https://docs.zotero-fr.org/kb/exporting/#), exportez la collection dans le format `BibTeX` et nommez le fichier `references.bib`. Mettez ke fichier dans le répertoire principal de votre projet.
+À partir de [Zotero](https://docs.zotero-fr.org/kb/exporting/#), exportez la collection dans le format `BibTeX` et nommez le fichier `references.bib`. Mettez le fichier dans le répertoire principal de votre projet.
 
 ## Documentation
 
