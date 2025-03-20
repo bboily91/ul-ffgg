@@ -1,0 +1,78 @@
+---
+title: "Rapport de session"
+bibliography: references.bib
+biblio-style: apa
+format:
+  ul-ffgg-pdf:
+    toc: true
+    lof: true
+    lot: true
+    indent: true
+    number-sections: true
+logo: logo-quarto
+logo_size: "1.5cm"
+author: 
+  - name: Benjamin
+copyright: 
+  holder: Benjamin
+  year: 2025
+professor: Albert Einstein
+abstract: |
+  Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing elit. Etiam  lobortisfacilisis sem.  Nullam nec mi et neque pharetra sollicitudin.  Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+remerciement: |
+  Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing elit. Etiam  lobortisfacilisis sem.  Nullam nec mi et neque pharetra sollicitudin.  Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+date: last-modified
+keep-tex: true
+jupyter: python3
+---
+
+# Introduction
+
+Bonjour dans ce texte, nous allons parler du dispositif expérimental établis par Steve Bédard [-@bedard_northern_2022] dans la forêt expérimentale de Duchesnay. En 2020, le gouvernement québécois annonce avoir atteint 17% de son territoire sous le status d’aire protégée (Radio-Canada, 2020). En 2022, lors du cadre mondiale de la biodiversité Kumming-Montréal, l’un des objectifs auxquels le Canada s’est engagé à respecter est la protection de 30% de ses écosystèmes terrestres, marin, d’eaux intérieures et côtiers d’ici 2030 (ONU, 2022).
+
+Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québec a apporté des modification à la Loi sur la conservation du patrimoine naturel (LCPN) en 2021. Cette modification apportera une accélération du processus de création d’aire protégée, d’inclure davantage les citoyens dans la création et la gestion d’aire protégée et finalement de diversifier les types de mesures de conservation (MELCCFP, 2025). Dans la région de Portneuf, un projet reflètant les grands objectifs de la modernisation de la LCPN a été entrepris par le Conseil de Nation Huron-Wendat depuis 2010 (Bérubé, 2021). Ce projet d’aire protégée à utilisation durable serait un outil incontournable pour la mise en oeuvre de la protection de 30% du territoire.
+
+
+Le dispoisitif est composé de quatre blocs, chacun composé de cinq unités expérimentals [@bedard_northern_2022]. Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québec a apporté des modification à la Loi sur la conservation du patrimoine naturel (LCPN) en 2021. Cette modification apportera une accélération du processus de création d’aire protégée, d’inclure davantage les citoyens dans la création et la gestion d’aire protégée et finalement de diversifier les types de mesures de conservation (MELCCFP, 2025). Dans la région de Portneuf, un projet reflètant les grands objectifs de la modernisation de la LCPN a été entrepris par le Conseil de Nation Huron-Wendat depuis 2010 (Bérubé, 2021). Ce projet d’aire protégée à utilisation durable serait un outil incontournable pour la mise en oeuvre de la protection de 30% du territoire.
+
+# Méthode
+
+# Résultat
+Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québec a apporté des modification à la Loi sur la conservation du patrimoine naturel (LCPN) en 2021. Cette modification apportera une accélération du processus de création d’aire protégée, d’inclure davantage les citoyens dans la création et la gestion d’aire protégée et finalement de diversifier les types de mesures de conservation (MELCCFP, 2025). Dans la région de Portneuf, un projet reflètant les grands objectifs de la modernisation de la LCPN a été entrepris par le Conseil de Nation Huron-Wendat depuis 2010 (Bérubé, 2021). Ce projet d’aire protégée à utilisation durable serait un outil incontournable pour la mise en oeuvre de la protection de 30% du territoire.
+
+## Exemple de tableau
+|**fruit**|**prix (\$/lbs)**|
+|:----|----:|
+|banane|2.05|
+|pomme|0.75|
+|fraise|3.00|
+
+: Prix unitaire des fruits {.striped .hover}
+
+## Exemple de figure
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+# Discussion
+
+# Conclusion
+
+{{< pagebreak >}}
+
+# Bibliographie
+

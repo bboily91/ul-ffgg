@@ -8,15 +8,19 @@ format:
     lof: true
     lot: true
     indent: true
+    number-sections: true
+logo: logo-quarto
+logo_size: "1.5cm"
 author: 
   - name: Benjamin
 copyright: 
   holder: Benjamin
   year: 2025
-professor: Anne Bernard
+professor: Albert Einstein
 abstract: |
-  Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québec a apporté des modification à la Loi sur la conservation du patrimoine naturel (LCPN) en 2021. Cette modification apportera une accélération du processus de création d’aire protégée, d’inclure davantage les citoyens dans la création et la gestion d’aire protégée et finalement de diversifier les types de mesures de conservation (MELCCFP, 2025). Dans la région de Portneuf.
-remerciement: Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québec a apporté des modification à la Loi sur la conservation du patrimoine naturel (LCPN) en 2021. Cette modification apportera une accélération du processus de création d’aire protégée, d’inclure davantage les citoyens dans la création et la gestion d’aire protégée et finalement de diversifier les types de mesures de conservation (MELCCFP, 2025). Dans la région de Portneuf,
+  Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing elit. Etiam  lobortisfacilisis sem.  Nullam nec mi et neque pharetra sollicitudin.  Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+remerciement: |
+  Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing elit. Etiam  lobortisfacilisis sem.  Nullam nec mi et neque pharetra sollicitudin.  Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
 date: last-modified
 keep-tex: true
 ---
@@ -41,7 +45,16 @@ Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québe
 |pomme|0.75|
 |fraise|3.00|
 
-: Prix unitaire des fruits {.striped .hover} 
+: Prix unitaire des fruits {.striped .hover}
+
+```{r title="bonjour"}
+library(knitr)
+library(kableExtra)
+
+knitr::kable(head(mtcars[, 1:4]), "pipe", col.names = c("Marque", "consommation", "nb cylindre", "HP", "proportion\n de rouille")) %>%
+  kable_styling(latex_options = "striped")
+```
+
 
 # Discussion
 
@@ -50,4 +63,4 @@ Afin de rencontrer la cible de 30% d’aire protégée sur territoire, le Québe
 {{< pagebreak >}}
 
 # Bibliographie
-\
+

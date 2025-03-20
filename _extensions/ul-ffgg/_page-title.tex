@@ -4,11 +4,12 @@
     {\large DEPARTEMENT DES SCIENCES DU BOIS ET DE LA FORET \\}
     {\large FACULTE DE FORESTERIE, DE GEOGRAPHIE ET DE GEOMATIQUE \\}
     {\large UNIVERSITE LAVAL \\}
-    {\includegraphics[width=1.5cm]{logo-quarto} \\}
-    \vspace{2cm}
+    $if(logo)$ %{\includegraphics[width=1.5cm]{logo-quarto} \\}
+        \includegraphics[width=$logo_size$]{$logo$} \\
+    $endif$
+    \vfill %\vspace{2cm}
     {\Huge\bfseries\underline {$title$} \par}
-    \vspace{2cm}
-
+    \vfill %\vspace{2cm}
     $if(author_count)$
         \ifnum $author_count$ = 1
             {\Large Auteur : \\}
@@ -17,7 +18,6 @@
         \fi
         $for(author)${\large {$author$}}$sep$\\$endfor$
     $endif$
-
     \vfill
     {\Large À l'intention de: \\ {$professor$}}
     \vfill

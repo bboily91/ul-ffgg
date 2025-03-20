@@ -161,23 +161,9 @@
 % Peut-etre demenager tout ca dans 'before-body.tex'???
 
 \usepackage{graphicx}
-\graphicspath{ {./images/} }
+\graphicspath{ {./_images/} }
 
 \usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -373,6 +359,8 @@ de Nation Huron-Wendat depuis 2010 (Bérubé, 2021). Ce projet d'aire
 protégée à utilisation durable serait un outil incontournable pour la
 mise en oeuvre de la protection de 30\% du territoire.
 
+\subsection{Exemple de tableau}\label{exemple-de-tableau}
+
 \begin{longtable}[]{@{}lr@{}}
 \caption{Prix unitaire des fruits}\tabularnewline
 \toprule\noalign{}
@@ -390,30 +378,36 @@ pomme & 0.75 \\
 fraise & 3.00 \\
 \end{longtable}
 
+\subsection{Exemple de figure}\label{exemple-de-figure}
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(knitr)}
-\FunctionTok{library}\NormalTok{(kableExtra)}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
 
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\FunctionTok{head}\NormalTok{(mtcars[, }\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{]), }\StringTok{"pipe"}\NormalTok{, }\AttributeTok{col.names =} \FunctionTok{c}\NormalTok{(}\StringTok{"Marque"}\NormalTok{, }\StringTok{"consommation"}\NormalTok{, }\StringTok{"nb cylindre"}\NormalTok{, }\StringTok{"HP"}\NormalTok{, }\StringTok{"proportion}\SpecialCharTok{\textbackslash{}n}\StringTok{ de rouille"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{latex\_options =} \StringTok{"striped"}\NormalTok{)}
+\NormalTok{r }\OperatorTok{=}\NormalTok{ np.arange(}\DecValTok{0}\NormalTok{, }\DecValTok{2}\NormalTok{, }\FloatTok{0.01}\NormalTok{)}
+\NormalTok{theta }\OperatorTok{=} \DecValTok{2} \OperatorTok{*}\NormalTok{ np.pi }\OperatorTok{*}\NormalTok{ r}
+\NormalTok{fig, ax }\OperatorTok{=}\NormalTok{ plt.subplots(}
+\NormalTok{  subplot\_kw }\OperatorTok{=}\NormalTok{ \{}\StringTok{\textquotesingle{}projection\textquotesingle{}}\NormalTok{: }\StringTok{\textquotesingle{}polar\textquotesingle{}}\NormalTok{\} }
+\NormalTok{)}
+\NormalTok{ax.plot(theta, r)}
+\NormalTok{ax.set\_rticks([}\FloatTok{0.5}\NormalTok{, }\DecValTok{1}\NormalTok{, }\FloatTok{1.5}\NormalTok{, }\DecValTok{2}\NormalTok{])}
+\NormalTok{ax.grid(}\VariableTok{True}\NormalTok{)}
+\NormalTok{plt.show()}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{longtable*}[t]{lrrrr}
-\toprule
-Marque & consommation & nb cylindre & HP & proportion
- de rouill\\
-\midrule
-\cellcolor{gray!10}{Mazda RX4} & \cellcolor{gray!10}{21.0} & \cellcolor{gray!10}{6} & \cellcolor{gray!10}{160} & \cellcolor{gray!10}{110}\\
-Mazda RX4 Wag & 21.0 & 6 & 160 & 110\\
-\cellcolor{gray!10}{Datsun 710} & \cellcolor{gray!10}{22.8} & \cellcolor{gray!10}{4} & \cellcolor{gray!10}{108} & \cellcolor{gray!10}{93}\\
-Hornet 4 Drive & 21.4 & 6 & 258 & 110\\
-\cellcolor{gray!10}{Hornet Sportabout} & \cellcolor{gray!10}{18.7} & \cellcolor{gray!10}{8} & \cellcolor{gray!10}{360} & \cellcolor{gray!10}{175}\\
-\addlinespace
-Valiant & 18.1 & 6 & 225 & 105\\
-\bottomrule
-\end{longtable*}
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{exemple_VSCode_files/figure-pdf/fig-polar-output-1.pdf}}
+
+}
+
+\caption{\label{fig-polar}A line plot on a polar axis}
+
+\end{figure}%
 
 \section{Discussion}\label{discussion}
 

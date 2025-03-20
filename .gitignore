@@ -1,8 +1,14 @@
 /_quarto.yml
+
 /.quarto/
 
 /.luarc.json
 
+/.Rhistory
+
 /Guide_de_redaction-2012.pdf
 
+/_extensions/ul-ffgg/.Rhistory
+/_extensions/ul-ffgg/.RData
+/_extensions/ul-ffgg/.Rproj.user/
 /_extensions/ul-ffgg/.Rhistory

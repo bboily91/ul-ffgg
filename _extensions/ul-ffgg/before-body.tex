@@ -9,9 +9,10 @@ $endif$
 \pagenumbering{roman}
 
 $if(abstract)$
-  \renewcommand{\abstractname}{\section{Résumé}\label{ruxe9sumuxe9}}
+  \renewcommand{\abstractname}{\section*{Résumé}\label{ruxe9sumuxe9}}
   \begin{abstract}
     \begin{center}
+      \addcontentsline{toc}{section}{Résumé}
       $abstract$
     \end{center}
     {\newpage}
@@ -20,7 +21,8 @@ $endif$
 
 $if(remerciement)$
   \begin{center}
-    \section{Remerciements}\label{remerciement}
+    \section*{Remerciements}\label{remerciement}
+    \addcontentsline{toc}{section}{Remerciements}
     $remerciement$
   \end{center}
   {\newpage}
