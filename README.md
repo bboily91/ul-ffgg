@@ -28,14 +28,14 @@ Ouvrez une session RStudio et aller dans le terminal.
 
 Pour installer l'extension et les exemples associés, utilisez la commande suivante : 
 ```bash
-quarto use template bboily91/UL-FFGG_Extension/ul-ffgg
+quarto use template bboily91/ul-ffgg
 ```
 
 Cette commande installe l'extension et crée un répertoire contenant des exemples, à utiliser comme point de départ pour vos rapports.
 
 Si vous travaillez déjà sur un projet existant et que le répertoire est déjà créé, exécutez cette commande dans le terminal depuis le répertoire de votre projet :
 ```bash
-quarto install extension bboily91/UL-FFGG_Extension/ul-ffgg
+quarto install extension bboily91/ul-ffgg
 ```
 ## Utilisation
 
